@@ -5,6 +5,60 @@ __metadata:
   version: 4
   cacheKey: 8
 
+"@alexletu/cli-commit@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@alexletu/cli-commit@workspace:."
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^5.0.0
+    "@typescript-eslint/parser": ^5.0.0
+    axios: 0.21.1
+    cachedir: 2.2.0
+    chai: 4.1.2
+    cli-truncate: ^1.0.0
+    codecov: 3.8.3
+    dedent: 0.7.0
+    detect-indent: 6.0.0
+    esbuild: ^0.13.6
+    esbuild-register: ^3.0.0
+    eslint: ^8.0.1
+    eslint-config-airbnb-base: ^14.2.1
+    eslint-config-airbnb-typescript: ^14.0.1
+    eslint-plugin-arca: ^0.11.1
+    eslint-plugin-import: ^2.25.2
+    find-node-modules: ^2.1.2
+    find-root: 1.1.0
+    find-up: ^5.0.0
+    fs-extra: 8.1.0
+    fuse.js: ^3.4.5
+    glob: 7.1.4
+    homedir: ^0.6.0
+    in-publish: 2.0.0
+    inquirer: 6.5.2
+    inquirer-autocomplete-prompt: ^0.12.0
+    inquirer-maxlength-input-prompt: ^1.0.1
+    is-utf8: ^0.2.1
+    lodash: 4.17.21
+    minimist: 1.2.5
+    mocha: 9.0.3
+    mocha-junit-reporter: 1.18.0
+    mocha-multi-reporters: 1.1.7
+    nodemon: 2.0.12
+    nyc: 15.1.0
+    pad: ^2.3.0
+    proxyquire: 2.1.0
+    read-pkg-up: ^7.0.1
+    semver: 6.3.0
+    sinon: 6.3.4
+    strip-bom: 4.0.0
+    strip-json-comments: 3.0.1
+    typescript: ^4.4.4
+    uuid: 3.4.0
+    wrap-ansi: ^3.0.0
+  bin:
+    cz: ./bin/git-cz
+  languageName: unknown
+  linkType: soft
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.14.5, @babel/code-frame@npm:^7.15.8":
   version: 7.15.8
   resolution: "@babel/code-frame@npm:7.15.8"
@@ -1252,61 +1306,6 @@ __metadata:
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
   languageName: node
   linkType: hard
-
-"commitizen@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "commitizen@workspace:."
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.0.0
-    "@typescript-eslint/parser": ^5.0.0
-    axios: 0.21.1
-    cachedir: 2.2.0
-    chai: 4.1.2
-    cli-truncate: ^1.0.0
-    codecov: 3.8.3
-    dedent: 0.7.0
-    detect-indent: 6.0.0
-    esbuild: ^0.13.6
-    esbuild-register: ^3.0.0
-    eslint: ^8.0.1
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-config-airbnb-typescript: ^14.0.1
-    eslint-plugin-arca: ^0.11.1
-    eslint-plugin-import: ^2.25.2
-    find-node-modules: ^2.1.2
-    find-root: 1.1.0
-    find-up: ^5.0.0
-    fs-extra: 8.1.0
-    fuse.js: ^3.4.5
-    glob: 7.1.4
-    homedir: ^0.6.0
-    in-publish: 2.0.0
-    inquirer: 6.5.2
-    inquirer-autocomplete-prompt: ^0.12.0
-    inquirer-maxlength-input-prompt: ^1.0.1
-    is-utf8: ^0.2.1
-    lodash: 4.17.21
-    minimist: 1.2.5
-    mocha: 9.0.3
-    mocha-junit-reporter: 1.18.0
-    mocha-multi-reporters: 1.1.7
-    nodemon: 2.0.12
-    nyc: 15.1.0
-    pad: ^2.3.0
-    proxyquire: 2.1.0
-    read-pkg-up: ^7.0.1
-    semver: 6.3.0
-    sinon: 6.3.4
-    strip-bom: 4.0.0
-    strip-json-comments: 3.0.1
-    typescript: ^4.4.4
-    uuid: 3.4.0
-    wrap-ansi: ^3.0.0
-  bin:
-    commitizen: ./bin/commitizen
-    cz: ./bin/git-cz
-  languageName: unknown
-  linkType: soft
 
 "commondir@npm:^1.0.1":
   version: 1.0.1

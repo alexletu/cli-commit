@@ -1,5 +1,5 @@
 {
-  "name": "commit-cli",
+  "name": "@alexletu/cli-commit",
   "main": "dist/index.js",
   "scripts": {
     "check-coverage": "nyc check-coverage --statements 80 --branches 80 --functions 80 --lines 80 ",
