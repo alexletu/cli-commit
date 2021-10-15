@@ -1,5 +1,6 @@
 {
   "name": "@alexletu/cli-commit",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "check-coverage": "nyc check-coverage --statements 80 --branches 80 --functions 80 --lines 80 ",
@@ -21,6 +22,10 @@
   },
   "bin": {
     "cz": "./bin/git-cz"
+  },
+  "repository": "https://github.com/alexletu/cli-commit",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
