@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "hbenl.vscode-mocha-test-adapter",
+    "juanblanco.solidity",
+    "aaron-bond.better-comments",
+    "mikestead.dotenv",
+    "pkief.material-icon-theme"
+  ],
+  "unwantedRecommendations": []
+}

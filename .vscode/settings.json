@@ -1,0 +1,45 @@
+{
+  "files.exclude": {
+    ".github": true,
+    ".yarn": true,
+    "dist": true
+    // "deployments": true,
+    // "node_modules": true,
+    // "yarn.lock": true,
+    // ".gitignore": true,
+    // ".prettierignore": true,
+    // ".solhintignore": true,
+    // ".solcover.ts": true,
+    // ".yarnrc.yml": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "solidity.linter": "solhint",
+  "solidity.defaultCompiler": "remote",
+  "solidity.compileUsingRemoteVersion": "v0.8.7+commit.e28d00a7",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+  "solidity.validationDelay": 1500,
+  "solidity.packageDefaultDependenciesDirectory": "node_modules",
+  "mochaExplorer.env": {
+    "HARDHAT_CONFIG": "hardhat.config.ts",
+    "HARDHAT_COMPILE": "true"
+  },
+  "mochaExplorer.require": ["ts-node/register/transpile-only"]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "commitizen",
+  "version": "0.0.0-semantically-released",
+  "description": "Git commit, but play nice with conventions.",
+  "main": "dist/index.js",
+  "scripts": {
+    "check-coverage": "nyc check-coverage --statements 80 --branches 80 --functions 80 --lines 80 ",
+    "commit": "cz",
+    "build": "esbuild ./src/**/*.{js,ts} --outdir=dist --format=cjs --platform=node",
+    "build:watch": "esbuild --watch ./src --outdir=dist --format=cjs --platform=node",
+    "report-coverage": "nyc report --reporter=lcov | codecov",
+    "write-coverage": "nyc report --reporter=lcov --reporter=cobertura --reporter=html",
+    "start": "yarn test:watch",
+    "test-actual": "mocha --reporter=mocha-multi-reporters --reporter-options configFile=./test/mochareporters.json test/tests/index.js",
+    "test": "nyc --require esbuild-register yarn test-actual",
+    "test:watch": "nodemon -q --ignore test/.tmp/ --ignore test/artifacts/ --ignore coverage/ --exec \"yarn test\" --",
+    "ts": "node -r esbuild-register"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  },
+  "bin": {
+    "commitizen": "./bin/commitizen",
+    "cz": "./bin/git-cz"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "axios": "0.21.1",
+    "chai": "4.1.2",
+    "codecov": "3.8.3",
+    "esbuild": "^0.13.6",
+    "esbuild-register": "^3.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-plugin-arca": "^0.11.1",
+    "eslint-plugin-import": "^2.25.2",
+    "in-publish": "2.0.0",
+    "mocha": "9.0.3",
+    "mocha-junit-reporter": "1.18.0",
+    "mocha-multi-reporters": "1.1.7",
+    "nodemon": "2.0.12",
+    "nyc": "15.1.0",
+    "proxyquire": "2.1.0",
+    "semver": "6.3.0",
+    "sinon": "6.3.4",
+    "typescript": "^4.4.4",
+    "uuid": "3.4.0"
+  },
+  "dependencies": {
+    "cachedir": "2.2.0",
+    "cli-truncate": "^1.0.0",
+    "dedent": "0.7.0",
+    "detect-indent": "6.0.0",
+    "find-node-modules": "^2.1.2",
+    "find-root": "1.1.0",
+    "find-up": "^5.0.0",
+    "fs-extra": "8.1.0",
+    "fuse.js": "^3.4.5",
+    "glob": "7.1.4",
+    "homedir": "^0.6.0",
+    "inquirer": "6.5.2",
+    "inquirer-autocomplete-prompt": "^0.12.0",
+    "inquirer-maxlength-input-prompt": "^1.0.1",
+    "is-utf8": "^0.2.1",
+    "lodash": "4.17.21",
+    "minimist": "1.2.5",
+    "pad": "^2.3.0",
+    "read-pkg-up": "^7.0.1",
+    "strip-bom": "4.0.0",
+    "strip-json-comments": "3.0.1",
+    "wrap-ansi": "^3.0.0"
+  },
+  "nyc": {
+    "exclude": [
+      "src/cli",
+      "test"
+    ]
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 14"
+  },
+  "packageManager": "yarn@3.0.2"
+}

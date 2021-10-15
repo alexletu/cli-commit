@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "checkJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "target": "esnext",
+    "lib": ["esnext"],
+    "resolveJsonModule": true,
+    "baseUrl": "."
+  },
+  "include": ["src", "./src/**/*.js", "./src/**/*.ts", "./test/**/*.js", "./test/**/*.ts"]
+}
